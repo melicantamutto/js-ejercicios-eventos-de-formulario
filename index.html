@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicios</title>
+</head>
+<body id="body">
+    <!-- <form class="kilometros">
+        <h3>Kilometros</h3>
+        <label for="kilometros"></label>
+        <input type="number" name="kilometros" id="kilometros" placeholder="1">
+        <h3>=</h3>
+        <h3>Millas</h3>
+        <label for="millas"></label>
+        <input type="number" name="millas" id="millas" placeholder="0.62">
+    </form> -->
+    <form class="rgb">
+        <h1>RGB</h1>
+        <h3>Red value</h3>
+        <label for="red"></label>
+        <input type="number" name="red" id="red" max="255" min="0" value="255">
+        <h3>Green value</h3>
+        <label for="green"></label>
+        <input type="number" name="green" id="green" max="255" min="0" value="255">
+        <h3>Blue value</h3>
+        <label for="blue"></label>
+        <input type="number" name="blue" id="blue" max="255" min="0" value="255">
+    </form>
+
+    <!-- <form class="todo">
+        <h2>Ingresá un item</h2>
+        <label for="text"></label>
+        <input type="text" id="text">
+        <button type="button" id="crear">Crear</button>
+        <ul id="lista">
+
+        </ul>
+    </form> -->
+
+    <!-- <form class="agregar-imagenes">
+        <h2>Ingresar la URL de la imagen</h2>
+        <label for="urlImagen"></label>
+        <input type="url" name="urlImagen" id="urlImagen">
+        <button id="cargarImagen">Cargar Imagen</button>
+        <article class="imagenes" id="imagenes">
+        </article>    
+    </form> -->
+
+    <form id='comentario'>
+        <textarea name="comment" id="comment" cols="30" rows="10" maxlength="240"></textarea>
+        <p id="result">0/240 caracteres</p>
+        <button id="send" type="button">Enviar</button>
+    </form>
+
+    <form id="conversor">
+        <label for="value">Valor original</label>
+        <input type="number" name="value" id="value" value="1">
+        <label for="unit">Unidad del Valor</label>
+        <select name="unit" id="unit">
+            <option value="1000">Kilómetros</option>
+            <option value="1" selected="selected">Metros</option>
+            <option value="0.1">Decímetros</option>
+            <option value="0.01">Centímetros</option>
+            <option value="0.001">Milímetros</option>
+        </select>
+        <label for="toUnity">Unidad a convertir</label>
+        <select name="toUnit" id="toUnit">
+            <option value="1000">Kilómetros</option>
+            <option value="1" selected="selected">Metros</option>
+            <option value="0.1">Decímetros</option>
+            <option value="0.01">Centímetros</option>
+            <option value="0.001">Milímetros</option>
+        </select>
+        <button type="button" id="switch">Intercambiar</button>
+        <p id="convertResult"></p>
+    </form>
+
+    <!-- <form id="buscador">
+        <header><h1>Buscador</h1></header>
+        <section class="container-search">
+            <input type="text" name="search" id="search" placeholder="Buscar..." class="search">
+        </section>
+        <section class="results-list">
+            <article class="hide">
+                <img src="https://www.mundogato.net/wp-content/uploads/gato-persa-1.jpg" alt="persa">
+                <p>Gato Persa</p>
+            </article>
+            <article class="hide">
+                <img src="https://www.mundogato.net/wp-content/uploads/gato-siames-thai-macho.jpg" alt="siames">
+                <p>Gato Siames</p>
+            </article>
+            <article class="hide">
+                <img src="https://www.mundogato.net/wp-content/uploads/gato-persa-smoke-700x600.jpg" alt="persa chachorro">
+                <p>Gato Persa cachorro</p>
+            </article>
+            <article class="hide">
+                <img src="https://www.mundogato.net/wp-content/uploads/gato-himalayo-700x600.jpg" alt="himalayo">
+                <p>Gato Himalayo</p>
+            </article>
+            <article class="hide">
+                <img src="https://www.mundogato.net/wp-content/uploads/gato-siberiano.jpg" alt="siberiano">
+                <p>Gato Siberiano</p>
+            </article>
+            <article class="hide">
+                <img src="https://www.mundogato.net/wp-content/uploads/gato-british-shorthair.jpg" alt="british">
+                <p>Gato British</p>
+            </article>
+            <article class="hide">
+                <img src="https:www.mundogato.net/wp-content/uploads/cachorros-gato-british-4-meses.jpg" alt="british cachorro">
+                <p>Gato british cachorro</p>
+            </article>
+            <article class="hide">
+                <img src="https:www.mundogato.net/wp-content/uploads/gato-himalaya-caracteristicas.jpg" alt="himalayo">
+                <p>Gato Himalayo</p>
+            </article>
+            <article class="hide">
+                <img src="https:www.mundogato.net/wp-content/uploads/gato2-605x600.jpg" alt="comun">
+                <p>Gato Común</p>
+            </article>
+        </section>
+        <p id="searchResult"></p>
+    </form> -->
+    <script src="./main.js"></script>
+</body>
+</html>

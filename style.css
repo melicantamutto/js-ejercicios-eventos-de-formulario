@@ -1,0 +1,32 @@
+#body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10%;
+    color: rgb(63, 11, 77);
+    box-sizing: border-box;
+}
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+img{
+    width: 350px;
+}
+article{
+    margin: 15px 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.results-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hide{
+    display: none;
+
+}
