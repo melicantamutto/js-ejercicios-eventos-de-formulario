@@ -38,17 +38,17 @@
 //     Cuando se modifica algún input, se cambie el color de fondo del body con el color que se forma a partir de dichos valores.
 
 
-const red = document.getElementById('red');
-const green = document.getElementById('green');
-const blue = document.getElementById('blue');
-const body = document.getElementById('body');
-const cambioFondo = () => {
-    body.style.backgroundColor = `rgb(${red.value}, ${green.value}, ${blue.value})`;
+// const red = document.getElementById('red');
+// const green = document.getElementById('green');
+// const blue = document.getElementById('blue');
+// const body = document.getElementById('body');
+// const cambioFondo = () => {
+//     body.style.backgroundColor = `rgb(${red.value}, ${green.value}, ${blue.value})`;
 
-}
-red.addEventListener('change', cambioFondo());
-green.addEventListener('change', cambioFondo());
-blue.addEventListener('change', cambioFondo());
+// }
+// red.addEventListener('keyup', () => {cambioFondo()});
+// green.addEventListener('keyup', () => {cambioFondo()});
+// blue.addEventListener('keyup', () => {cambioFondo()});
 
 // red.onblur= cambioFondo();
 // green.onblur= cambioFondo();
@@ -130,12 +130,13 @@ const result = document.getElementById('result');
 const send = document.getElementById('send');
 
 const printResult = () =>{
-    result.innerText = `${parseInt(innerComment.length)}/240 caracteres`
+    result.innerText = `${parseInt(innerComment.length)}/240 caracteres`;
 }
 
-
-comment.addEventListener('keyup', printResult());
-comment.addEventListener('change', printResult());
+comment.addEventListener('input', (e) => {
+    e.preventDefault();
+    printResult()
+});
 
 send.addEventListener('click', () =>{
 
@@ -192,9 +193,18 @@ const convert = () =>{
     convertResult.innerHTML = `${process}`;
 }
 
-value.onkeyup = (convert());
-unit.onchange = (convert());
-toUnit.onchange = (convert());
+value.addEventListener('keyup', (e) => {
+    e.preventDefault();
+    convert()
+});
+unit.addEventListener('change', (e) => {
+    e.preventDefault();
+    convert()
+});
+toUnit.addEventListener('change', (e) => {
+    e.preventDefault();
+    convert()
+});
 
 swap.addEventListener('click', (e) =>{
     e.preventDefault();
